@@ -43,7 +43,7 @@ export const scrapeListings = async ({ browser, retryCount }) => {
     } catch (pageError) {
       if (retryCount < MAX_RETRIES) {
         console.log(`Retrying... (${retryCount + 1}/${MAX_RETRIES})`);
-        return await scrapeListings(retryCount + 1);
+        return await scrapeListings({ browser, retryCount: retryCount + 1 });
       } else {
         throw new Error(
           `Failed to scrape data after ${MAX_RETRIES} attempts: ${pageError.message}`
