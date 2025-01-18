@@ -20,7 +20,6 @@ function App() {
 
     try {
       const END_POINT = import.meta.env.VITE_API_URL;
-      console.log(">>> endpoint: ", END_POINT);
       const response = await axios.get(END_POINT);
 
       if (response.data.length === 0) {
@@ -28,7 +27,6 @@ function App() {
       }
       setListings(response.data);
     } catch (err) {
-      console.log(">>> err: ", err);
       setError(
         err.response?.data?.error ||
           "Failed to fetch listings. Please try again."
