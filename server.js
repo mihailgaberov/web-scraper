@@ -4,7 +4,7 @@ import cors from "cors";
 import { scrapeListings } from "./utils/scraper.js";
 
 const app = express();
-const PORT = 5001;
+const port = process.env.PORT || 5001;
 
 app.use(cors());
 

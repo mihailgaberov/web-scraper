@@ -8,7 +8,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "node server.js"
+    "start": "node server.js",
+    "postinstall": "npx playwright install"
   },
   "dependencies": {
     "@uidotdev/usehooks": "^2.4.1",
