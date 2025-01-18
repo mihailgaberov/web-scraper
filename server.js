@@ -19,6 +19,6 @@ app.get("/scrape", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Scraper server running on http://localhost:${PORT}`);
+app.listen(port, () => {
+  console.log(`Scraper server running on http://localhost:${port}`);
 });
