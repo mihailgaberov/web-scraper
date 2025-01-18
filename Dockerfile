@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y \
 RUN npx playwright install --with-deps
 
 # Set the working directory
-WORKDIR /app
+WORKDIR /
 COPY . .
 
 # Install dependencies
