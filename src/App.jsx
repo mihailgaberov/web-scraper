@@ -22,9 +22,10 @@ function App() {
       const END_POINT = import.meta.env.VITE_API_URL;
       const response = await axios.get(END_POINT);
 
-      if (response.data.length === 0) {
+      if (response.data.length === 0 || !Array.isArray(response.data)) {
         throw new Error("No listings found");
       }
+
       setListings(response.data);
     } catch (err) {
       setError(

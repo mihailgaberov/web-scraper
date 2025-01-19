@@ -2,7 +2,7 @@
 FROM mcr.microsoft.com/playwright:v1.40.0-focal
 
 # Set the working directory
-WORKDIR /app
+WORKDIR /
 
 # Copy package.json and install dependencies
 COPY package.json package-lock.json ./
