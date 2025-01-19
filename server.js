@@ -11,7 +11,7 @@ app.use(cors());
 app.get("/scrape", async (req, res) => {
   let browser;
   try {
-    browser = await chromium.launch({ headless: false });
+    browser = await chromium.launch();
     const listings = await scrapeListings({ browser, retryCount: 3 });
     res.json(listings);
   } catch (error) {
