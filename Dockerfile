@@ -1,5 +1,5 @@
 # Use a base image with Playwright dependencies
-FROM mcr.microsoft.com/playwright:v1.49.1-focal
+FROM mcr.microsoft.com/playwright:v1.46.0-noble
 
 # Set the working directory
 WORKDIR /
