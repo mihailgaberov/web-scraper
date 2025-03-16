@@ -2,6 +2,8 @@
 
 A web application that scrapes data from Airbnb (last 10 properties), processes the data, and displays it in a user-friendly interface.
 
+>_I have written a tutorial about how I did this. You can find it [here](https://www.mihailgaberov.com/building-a-dynamic-web-scraper-app-with-playwright-and-react:-a-step-by-step-guide) or [here](https://www.freecodecamp.org/news/build-a-dynamic-web-scraper-app-with-playwright-and-react/)._
+
 ![Webscraper UI](https://github.com/mihailgaberov/mihail-gaberov-fullstack-coding-challenge/blob/main/screenshot.png)
 
 <hr />
